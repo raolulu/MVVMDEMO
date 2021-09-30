@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="vm" type="com.iauto.testapp.viewmodels.acitivity.TestActivity1VM"/>
+    </data>
+
+    <com.iauto.testapp.base.view.AbsLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_x="10px"
+            android:layout_y="10px"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="testAcitivity1">
+        </TextView>
+
+        <Button
+            android:layout_x="600px"
+            android:layout_y="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start activity2"
+            android:onClick="onClickButtonActivity">
+        </Button>
+
+        <Button
+            android:layout_x="100px"
+            android:layout_y="200px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="first_fragment"
+            android:onClick="onClickButton1">
+        </Button>
+        <Button
+            android:layout_x="800px"
+            android:layout_y="200px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="second_fragment"
+            android:onClick="onClickButton2">
+        </Button>
+        <FrameLayout
+            android:layout_x="10px"
+            android:layout_y="600px"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:id="@+id/firstframent">
+        </FrameLayout>
+        <FrameLayout
+            android:layout_x="650px"
+            android:layout_y="600px"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:id="@+id/secondframent">
+        </FrameLayout>
+    </com.iauto.testapp.base.view.AbsLayout>
+</layout>
